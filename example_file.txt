@@ -1,4 +1,4 @@
-THIS 
+this
 is 
-A
-TEST
+a 
+test
