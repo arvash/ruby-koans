@@ -5,20 +5,7 @@ require 'triangle.rb'
 
 
 class AboutTriangleProject < EdgeCase::Koan
-  def triangle(a, b, c)
-     if a==b && b==c
-       :equilateral
-	else
-		if a==b || b==c || a==c
-		:isosceles
-			else
-			:scalene
-		end
-	end
-  end
-
-
-  def test_equilateral_triangles_have_equal_sides
+    def test_equilateral_triangles_have_equal_sides
     assert_equal :equilateral, triangle(2, 2, 2)
     assert_equal :equilateral, triangle(10, 10, 10)
   end
