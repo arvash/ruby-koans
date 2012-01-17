@@ -30,7 +30,34 @@ require File.expand_path(File.dirname(__FILE__) + '/edgecase')
 # Your goal is to write the score method.
 
 def score(dice)
-  # You need to write this method
+a = dice
+sum = 0
+if (a.count == 0)  
+sum = 0  
+
+elsif (a.count(1) > 2)
+sum = (1000+ ((a.count(1)-3)*100)+(a.count(5)*50))
+
+elsif (a.count(2) > 2)
+sum = ((100*2)+(a.count(1)*100)+(a.count(5)*50))
+
+elsif (a.count(3) > 2)
+sum = ((100*3)+(a.count(1)*100)+(a.count(5)*50))
+
+elsif (a.count(4) > 2)
+sum = ((100*4)+(a.count(1)*100)+(a.count(5)*50))
+
+elsif (a.count(5) > 2)
+sum = ((100*5)+(a.count(1)*100)+((a.count(5)-3)*50))
+
+elsif (a.count(6) > 2)
+sum = ((100*6)+(a.count(1)*100)+(a.count(5)*50))
+
+else
+sum = ((a.count(1)*100) + (a.count(5)*50))
+
+return sum
+end
 end
 
 class AboutScoringProject < EdgeCase::Koan
