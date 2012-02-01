@@ -4,8 +4,9 @@ class AboutMessagePassing < EdgeCase::Koan
 
   class MessageCatcher
     def caught?
-      true
-     # print "caught the message..."
+          #print "caught the message..."
+          true
+     
     end
   end
 

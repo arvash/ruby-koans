@@ -64,3 +64,8 @@ is the player with the highest score after the final round.
 Greed is described on Wikipedia at
 http://en.wikipedia.org/wiki/Greed_(dice_game), however the rules are
 a bit different from the rules given here.
+
+
+dice is an array.. class Diceset is a class which creates an object..it has function :roll which takes number of dice as input and returns an array which contains the values of rolled dice...it also has a method :values which displays the array...ok...so lets start the dice roll for initial game...
+
+
